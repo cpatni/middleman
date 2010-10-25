@@ -1,0 +1,14 @@
+.*.sw?
+.svn
+.DS_Store
+*.tmproj
+*.zip
+.com.apple.*
+.idea
+.bundle
+target
+db/*
+log/*.log
+*.iml
+*.ipr
+*.iws
