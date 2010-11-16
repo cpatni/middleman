@@ -190,7 +190,7 @@ public class Middleman extends HttpServlet {
 
     }
 
-    @Trace(metricName = "MemCache")
+    @Trace(metricName = "MemCache/read")
     private Object getCached(String cacheKey) {
         return memcachedClient.get(cacheKey);
     }
@@ -261,7 +261,7 @@ public class Middleman extends HttpServlet {
         });
     }
 
-    @Trace(metricName = "memcached")
+    @Trace(metricName = "MemCache/write")
     protected void cacheWebResponse(String cacheKey, WebResponse r) {
         int timeout = memcachedTimeout;
 
